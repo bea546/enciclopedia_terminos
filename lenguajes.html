@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/logo_16.png" sizes="16x16">
 
+    <link rel="icon" type="image/png" href="img/logo_32.png" sizes="32x32">
+    
+    <link rel="icon" type="image/png" href="img/logo_64.png" sizes="64x64">
     <title>Enciclopedía Front-End</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,9 +22,11 @@
 
     <header>
         <div class="top">
-            <h1 class="sr">Enciclopedia Front-End</h1>
+          
+            
             <a href="index.html"><img src="img/logo.png" alt="Logo de Enciclopedia Front-End"
                     title="Logo de Enciclopedia Front-End" /></a>
+                    <h3>Enciclopedia de Front-End</h3>
             <ul>
                 <li><a href="">CA</a></li>
                 <li><a href="" class="current">ES</a></li>
@@ -30,17 +36,32 @@
         <nav>
             <ul>
                 <li><a href="module-bounders.html">Module-Bundlers</a></li>
-                <li><a href="lenguajes.html">Lenguajes Front-End</a></li>
+                <li><a href="lenguajes.html" class="current">Lenguajes Front-End</a></li>
                 <li><a href="preprocesadores.html">Preprocesadores</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
+    <figure>
+                    <img src="img/designbymovil.jpeg" class="img-fluid"
+    srcset="img/designbymovil@mobile.jpg 320w,
+    img/designbymovil@wide-mobile.jpg 480w,
+    img/designbymovil@tablet.jpg 768w,
+    img/designbymovil@desktop.jpg 1024w,
+    img/designbymovil@hires.jpg 1280w"
+    sizes="
+    (max-width: 30em) 60vw,
+    (max-width: 40em) 90vw"
+    alt="A really hard-worker.">
+
+</figure>
 
         <!--Contenedor lenguajes-->
-        <section>
+        
             <div class="container">
+                    <!--<img src="img/designbymovil.jpeg" alt="LOGO HTML5" class="img-fluid" />-->
+
                 <h2>Las bases del frontend</h2>
                 <p class="textDecor">A pesar de que hay varios lenguajes que se usan en el frontend, nosotros nos
                     fijaremos en tres elementos
@@ -49,42 +70,39 @@
                 <div class="flexContainer spaceBetween">
                     <div class="col4">
                         <figure>
-                            <a href="js.html"><img src="img/js.png" alt="Logo  JavaScript" class="imgFluid" /></a>
+                            <a href="js.html"><img src="img/js_detail.jpg" alt="Logo  JavaScript" class="imgFluid" /></a>
                             <figcaption>
-                                <a href="" class="titleActiv"><cite>Logotipo JavaScript</cite><span class="nota">de
-                                        Carlos Ruiz Zafón</span></a>
+                                <a href="" class="titleActiv"><cite>¿Que es Java Script?</cite></a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="col4">
                         <figure>
-                            <a href="html.html"><img src="img/html.jpg" alt="LOGO HTML5" class="imgFluid" /></a>
+                            <a href="html.html"><img src="img/html_detail.jpg" alt="LOGO HTML5" class="imgFluid" /></a>
                             <figcaption>
-                                <a href="" class="titleActiv"><cite>Logotipo HTML5</cite><span class="nota">de Juan
-                                        Marsé</span></a>
+                                <a href="" class="titleActiv"><cite>¿Que es HTML5? </cite></a>
                             </figcaption>
                         </figure>
                     </div>
                     <div class="col4">
                         <figure>
-                            <a href="css.html"><img src="img/css.jpg" alt="Logo CSS" class="imgFluid" /></a>
+                            <a href="css.html"><img src="img/css_detail.jpg" alt="Logo CSS" class="imgFluid" /></a>
                             <figcaption>
-                                <a href="" class="titleActiv"><cite>LOgotipo CSS</cite><span class="nota" lang="ca">de
-                                        Mercè Rodoreda</span></a>
+                                <a href="" class="titleActiv"><cite>¿Que es CSS</cite></a>
                             </figcaption>
                         </figure>
                     </div>
                 </div>
             </div>
-        </section>
+       
 
 
     </main>
 
     <footer>
         <div class="container">
-            <img src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
-            <address class="pTop15" lang="es">Calle Cantones 9. 31243 Arróniz<br>Tel. 948 22 65 36<br><a
+            <img class="clip" src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
+            <h3>Enciclopedia de Front-End</h3><address class="pTop15" lang="es">Calle Cantones 9. 31243 Arróniz<br>Tel. 948 22 65 36<br><a
                     href="mailto:info@enciclopedia.org">info@enciclopediafrontend.org</a></address>
             <ul class="noPics pTop15">
                 <li><a href=""><span class="fab fa-twitter"></span></a></li>

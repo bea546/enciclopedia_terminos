@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/logo_16.png" sizes="16x16">
 
+    <link rel="icon" type="image/png" href="img/logo_32.png" sizes="32x32">
+    
+    <link rel="icon" type="image/png" href="img/logo_64.png" sizes="64x64">
     <title>Enciclopedía Front-End</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,9 +22,10 @@
 
     <header>
         <div class="top">
-            <h1 class="sr">Enciclopedia Front-End</h1>
+            
             <a href="index.html"><img src="img/logo.png" alt="Logo de Enciclopedia Front-End"
                     title="Logo de Enciclopedia Front-End" /></a>
+                    <h3>Enciclopedia de Front-End</h3>
             <ul>
                 <li><a href="">CA</a></li>
                 <li><a href="" class="current">ES</a></li>
@@ -29,7 +34,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="module-bounders.html">Module-Bundlers</a></li>
+                <li><a href="module-bounders.html" class="current">Module-Bundlers</a></li>
                 <li><a href="lenguajes.html">Lenguajes Front-End</a></li>
                 <li><a href="preprocesadores.html">Preprocesadores</a></li>
             </ul>
@@ -37,7 +42,21 @@
     </header>
 
     <main id="main">
-
+        <figure>
+            
+                    <img src="img/programmer.jpg" class="img-fluid"
+                    srcset="
+                    img/programmer@mobile.jpg 320w,
+                    img/programmer@wide-mobile.jpg 480w,
+                    img/programmer@tablet.jpg 768w,
+                    img/programmer@desktop.jpg 1024w,
+                    img/programmer@hires.jpg 1280w"
+                    sizes=" (max-width: 30em) 60vw,
+                    (max-width: 40em) 90vw"
+                    alt="Module-bounders is great">
+           
+                </figure>       
+                    
         <article class="container">
 
             <header>
@@ -82,12 +101,13 @@
 
         </article>
 
-
+                   
     </main>
 
     <footer>
         <div class="container">
-            <img src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
+            <img class="clip" src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
+            <h3>Enciclopedia de Front-End</h3>
             <address class="pTop15" lang="es">Calle Cantones 9. 31243 Arróniz<br>Tel. 948 22 65 36<br><a
                     href="mailto:info@enciclopedia.org">info@enciclopediafrontend.org</a></address>
             <ul class="noPics pTop15">

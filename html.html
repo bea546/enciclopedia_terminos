@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/logo_16.png" sizes="16x16">
 
+    <link rel="icon" type="image/png" href="img/logo_32.png" sizes="32x32">
+    
+    <link rel="icon" type="image/png" href="img/logo_64.png" sizes="64x64">
     <title>Enciclopedía Front-End</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,9 +22,10 @@
 
     <header>
         <div class="top">
-            <h1 class="sr">Enciclopedia Front-End</h1>
+         
             <a href="index.html"><img src="img/logo.png" alt="Logo de Enciclopedia Front-End"
                     title="Logo de Enciclopedia Front-End" /></a>
+                    <h3>Enciclopedia de Front-End</h3>
             <ul>
                 <li><a href="">CA</a></li>
                 <li><a href="" class="current">ES</a></li>
@@ -37,64 +42,116 @@
     </header>
 
     <main id="main">
-        <!--Menú de migas de pan-->
-        <ul class="breadcrumb">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="lenguajes.html">Lenguajes</a></li>
-            <li><a href="js.html">JavaScript</a></li>
-            <li><a href="css.html">CSS</a></li>
-            <li class="current">html</li>
-        </ul>
-        <!--./Menú de migas de pan-->
-        <article class="container">
+        
+            <div class="container">
+                <figure>
 
-            <header>
-                <h2>Que se entiende por html </h2>
-                <p class="meta">Por Beatriz Romero, 21 de noviembre de 2019</p>
-                <div class="autor">
-                    <img src="img/bea-2.png" alt="Beatriz Romero" class="img-rounded img-left">
-                    <p class="bio">Profesora de ciclos formativos C.I.Politécnico de Estella de la rama de infromatica.
-                        Profesora Grado Diseño Escuela de Artes de Corella. Diseñadora freelance. Cofundadora de BGCrea.
-                    </p>
+                    <img src="img/html.jpg" class="img-fluid" srcset="img/html@mobile.jpg 320w,
+            img/html@wide-mobile.jpg 480w,
+            img/html@tablet.jpg 768w,
+            img/html@desktop.jpg 1024w,
+            img/html@hires.jpg 1280w" sizes="
+            (max-width: 20em) 30vw,
+            (max-width: 30em) 60vw,
+            (max-width: 40em) 90vw" alt="A brave job.">
+                </figure>
+                <!--Menú de migas de pan-->
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="lenguajes.html">Lenguajes</a></li>
+                    <li><a href="js.html">JavaScript</a></li>
+                    <li><a href="css.html">CSS</a></li>
+                    <li class="current">html</li>
+                </ul>
+                <!--./Menú de migas de pan-->
+                <h2>¿Es HTML un lenguaje de programación?</h2>
+                <p class="textDecor">En principio diremos que HTML no es un lenguaje de programación, aunque de forma
+                    coloquial muchas veces se oigan referencias a HTML como si lo fuera. HTML es un lenguaje de
+                    etiquetas. Estas etiquetas (tag) HTML comunican al navegador cuál es la información a mostrar por
+                    pantalla, además del formato de dicha información.</p>
+                <div class="flexContainer spaceBetween">
+                    <div class="col4">
+                        <figure>
+                            <a href=""><img src="img/etiqueta.jpeg" alt="Imagen etiqueta" class="imgFluid" /></a>
+                            <figcaption>
+                                <a href="" class="titleActiv"><cite>La etiqueta en html</cite></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col4">
+                        <figure>
+                            <a href=""><img src="img/comic-html.jpeg" alt="Comic html" class="imgFluid" /></a>
+                            <figcaption>
+                                <a href="" class="titleActiv"><cite> Robin aprenden html </cite></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col4">
+                        <figure>
+                            <a href="css.html"><img src="img/html.png" alt="Logo html5" class="imgFluid" /></a>
+                            <figcaption>
+                                <a href="" class="titleActiv"><cite>La versión 5 del html</cite></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <article class="container">
+
+                        <header>
+                            <h2>Que se entiende por html </h2>
+                            <p class="meta">Por Beatriz Romero, 21 de noviembre de 2019</p>
+                            <div class="autor">
+                                <img src="img/bea-2.png" alt="Beatriz Romero" class="img-rounded img-left">
+                                <p class="bio">Profesora de ciclos formativos C.I.Politécnico de Estella de la rama de
+                                    infromatica.
+                                    Profesora Grado Diseño Escuela de Artes de Corella. Diseñadora freelance.
+                                    Cofundadora de BGCrea.
+                                </p>
+                            </div>
+                        </header>
+                        <p class="intro clear-left">
+                            HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet.
+                            Se trata de la siglas que corresponden a HyperText Markup Language, es decir,
+                            Lenguaje de Marcas de Hipertexto.
+                        </p>
+                        <blockquote>
+                            <p>HTML es un lenguaje de marcado de los contenidos de un sitio web, es decir,
+                                para designar la función de cada elemento dentro de la página: titulares, párrafos,
+                                listas, tablas,
+                                etc. Es el esqueleto de la web y la base de todo.</p>
+                        </blockquote>
+                        <p> La primera descripción de HTML disponible públicamente fue un documento llamado "Etiquetas
+                            HTML"
+                            ,mencionado por primera vez en Internet por Tim Berners-Lee a fines de 1991.
+                            Describe 18 elementos que comprenden el diseño inicial relativamente simple de HTML.
+                            Excepto por la etiqueta de hipervínculo, estos fueron fuertemente influenciados por SGMLguid
+                            ,un formato de documentación interno basado en el Lenguaje de Marcado Generalizado Estándar
+                            (SGML) en el
+                            CERN.
+                            Estos elementos todavía existen en HTML.
+
+                        </p>
+
+                        <figure>
+                            <div class="video-fluid">
+                                <iframe class="video-fluid-item"
+                                    src="https://embed.ted.com/talks/lang/es/tim_berners_lee_on_the_next_web"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <a class="sr" href=https://www.ted.com/talks/tim_berners_lee_on_the_next_web?>Ver el
+                                    vídeo en TED</a> </div> <figcaption><cite lang="en">Tim Berners-Lee| Web future<abbr
+                                            title="Tim Berners-Lee">TED2009
+                                        </abbr> </cite></figcaption>
+                        </figure>
+                    </article>
                 </div>
-            </header>
-            <p class="intro clear-left">
-                HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet.
-                Se trata de la siglas que corresponden a HyperText Markup Language, es decir,
-                Lenguaje de Marcas de Hipertexto.
-            </p>
-            <blockquote>
-                <p>HTML es un lenguaje de marcado de los contenidos de un sitio web, es decir,
-                    para designar la función de cada elemento dentro de la página: titulares, párrafos, listas, tablas,
-                    etc. Es el esqueleto de la web y la base de todo.</p>
-            </blockquote>
-            <p> La primera descripción de HTML disponible públicamente fue un documento llamado "Etiquetas HTML"
-                ,mencionado por primera vez en Internet por Tim Berners-Lee a fines de 1991.
-                Describe 18 elementos que comprenden el diseño inicial relativamente simple de HTML.
-                Excepto por la etiqueta de hipervínculo, estos fueron fuertemente influenciados por SGMLguid
-                ,un formato de documentación interno basado en el Lenguaje de Marcado Generalizado Estándar (SGML) en el
-                CERN.
-                Estos elementos todavía existen en HTML.
-
-            </p>
-
-            <figure>
-                <div class="video-fluid">
-                    <iframe class="video-fluid-item"
-                        src="https://embed.ted.com/talks/lang/es/tim_berners_lee_on_the_next_web"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <a class="sr" href=https://www.ted.com/talks/tim_berners_lee_on_the_next_web?>Ver el vídeo en
-                        TED</a> </div> <figcaption><cite lang="en">Tim Berners-Lee| Web future<abbr
-                                title="Tim Berners-Lee">TED2009
-                            </abbr> </cite></figcaption>
-            </figure>
-        </article>
+        
     </main>
 
     <footer>
         <div class="container">
-            <img src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
+            <img class="clip" src="img/logo1.png" alt="Logo enciclopedia Front-End" title="Enciclopedia Front-End" />
+            <h3>Enciclopedia de Front-End</h3>
             <address class="pTop15" lang="es">Calle Cantones 9. 31243 Arróniz<br>Tel. 948 22 65 36<br><a
                     href="mailto:info@enciclopedia.org">info@enciclopediafrontend.org</a></address>
             <ul class="noPics pTop15">

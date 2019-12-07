@@ -1,4 +1,4 @@
-/*Estilos PEC1 Herramientas HTML+CSSS */
+/*Estilos PEC2 Herramientas HTML+CSSS */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 * {
@@ -178,9 +178,16 @@ footer {
     color: #fff;
     text-align: center;
 }
-
+.clip:hover{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
 .background {
     background-color: rgba(136, 136, 136, 1);
+}
+/*para que se  aline la imagen destacada*/
+figure{
+    text-align: center;
+    width: 100%;
 }
 
 /*contenedores que se adaptan*/
@@ -226,56 +233,29 @@ footer {
     .spaceBetween {
         justify-content: space-between;
     }
-    .flexStart {
-        align-items: flex-start;
-    }
-    .flexCenter {
-        align-items: center;
-    }
+  
 }
-.col3, .col5, .col4, .col6, .col7 {
+.col4 {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
 }
-.col2 {
-    width: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 @media (min-width: 768px) {
-    .col2 {
-        flex: 0 0 16.6666667%;
-        max-width: 16.6666667%;
-    }
-    .col3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
+    
     .col4 {
-        flex: 0 0 33.333333%;
+        flex: 0 0 33.333333% ;
         max-width: 33.333333%;
     }
-    .col5 {
-        flex: 0 0 41.6666667%;
-        max-width: 41.6666667%;
-    }
-    .col6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    } 
-    .col7 {
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }   
+    
 }
 
 /**********************************
 Menús de navegació y logo
 ***********************************/
 
-/*Menú de navegació principal, menú idiomas */
+/*Menú de navegació principal, menú idiomas,logo, titulo */
 nav {
     text-align: center;
     font-weight: 600;
@@ -293,11 +273,19 @@ div.top {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-}
-div.top img {
-    max-width: 100%;
+    text-align: center;
 }
 
+
+div.top h3:hover {
+    color: rgb(250, 250, 250);
+    transition-duration: 2s;
+  }
+
+div.top img {
+    max-width: 100%;
+    
+      }
 div.top ul {
     list-style: none;
     margin-bottom: 15px;
@@ -338,6 +326,7 @@ a.current {
         flex-direction: row;
         align-items: flex-start;
     }
+    
 }
 
 
@@ -406,19 +395,19 @@ Imagen portada front-end
     padding-top: 100px;
 }
 
-#home {
+/*#home {
     background: #000 url(../img/front-end.jpeg) no-repeat bottom center;
     color: #fff;
     background-size: cover;
 }
 
-#tickets {
+/*#tickets {
     background: #000 url(../img/preprocesadores.jpeg) no-repeat bottom center;
     color: #fff;
     background-size: cover;
 }
 
-/*#bgActiv  {
+#bgActiv  {
     background: #000 url(../img/des.jpg) no-repeat bottom center;
     color: #fff;
     background-size: cover;
@@ -455,7 +444,7 @@ Imagen portada front-end
 Activitats
 *****************************/
 .titleActiv, .dates {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1em;
 }
 
@@ -619,7 +608,27 @@ article footer p {
     display: inline-block;
     cursor:pointer;
   }
-    
+    /*experimentos*/
+
+    .move{
+
+        color: #6d6d6e;
+        transition: color 0.5s ease-out;  
+        animation-duration: 3s;
+            animation-name: slidein;
+          }
+          
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%; 
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            } 
+    }
     
 
 
