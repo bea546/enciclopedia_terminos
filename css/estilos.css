@@ -1,6 +1,5 @@
 /*Estilos PEC2 Herramientas HTML+CSSS */
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
 * {
     margin: 0;
     padding: 0;
@@ -395,24 +394,6 @@ Imagen portada front-end
     padding-top: 100px;
 }
 
-/*#home {
-    background: #000 url(../img/front-end.jpeg) no-repeat bottom center;
-    color: #fff;
-    background-size: cover;
-}
-
-/*#tickets {
-    background: #000 url(../img/preprocesadores.jpeg) no-repeat bottom center;
-    color: #fff;
-    background-size: cover;
-}
-
-#bgActiv  {
-    background: #000 url(../img/des.jpg) no-repeat bottom center;
-    color: #fff;
-    background-size: cover;
-}
-*/
 .hero p:first-child {
     font-size: 2.3rem;
     font-family: 'Merriweather', serif;
